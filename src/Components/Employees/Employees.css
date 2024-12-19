@@ -1,0 +1,13 @@
+.employee-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+
+.employee{
+    background-color: burlywood;
+    border: 1px solid brown;
+    padding: 10px;
+    border-radius: 5px;
+}
