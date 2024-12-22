@@ -2,7 +2,7 @@ import React,{useEffect,useState} from "react";
 import { useLoaderData,Link, useNavigate } from "react-router-dom";
 import './Employees.css'
 
-import { LineChart, Line } from 'recharts';
+
 
 const Employees =() =>{
 
@@ -10,23 +10,12 @@ const Employees =() =>{
 
     const navigate=useNavigate();
 
-    const data = [
-        {name: 'Page A', uv: 400, pv: 2400, amt: 2000},
-        {name: 'Page B', uv: 500, pv: 1000, amt: 1800},
-        {name: 'Page C', uv: 200, pv: 1500, amt: 1500},
-        {name: 'Page D', uv: 600, pv: 500, amt: 1700},
-
-    ];
 
 
     return(
         <div>
 
-     const renderLineChart = (
-          <LineChart width={400} height={400} data={data}>
-          <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-        </LineChart>
-       );
+    
 
 
             <h1>Nice employee</h1>
