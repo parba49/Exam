@@ -17,27 +17,29 @@ const Sidebar = () => {
              <ul className='grid grid-cols-1 gap-4'>
         <li>
           {/* <a href="/">Home</a> */}
-          <NavLink to="/">Home</NavLink>
+          <NavLink className="font-medium" to="/">Home</NavLink>
 
         </li>
         <li>
           {/* <a href="/about">About Us</a> */}
-          <NavLink to="about">About Us</NavLink>
+          <NavLink className="font-medium" to="about">About Us</NavLink>
           </li>
           <li>
           {/* <a href="/contact">Contact Us</a> */}
           
           
-          <NavLink  to="contact">contact Us</NavLink>
+          <NavLink className="font-medium"  to="self">My Self</NavLink>
 
         </li>
 
         <li>
          
-          <NavLink to="employees">Our Employee</NavLink>
+          <NavLink className="font-medium" to="employees">Our Employee</NavLink>
 
         </li>
       </ul>
+     
+      
         </div>
     );
 };
