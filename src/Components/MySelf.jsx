@@ -38,7 +38,7 @@ const MySelf = () => {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-medium text-gray-900 mb-1">Don't Make Me Think</h3>
+              <h3 className="font-medium text-gray-900 mb-1">WALK INTO THE SHADOW</h3>
               <p className="text-sm text-gray-500 mb-4">Steve Krug, 2000</p>
               
               <div className="space-y-2">
@@ -109,8 +109,8 @@ const MySelf = () => {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-medium text-gray-900 mb-1">Don't Make Me Think</h3>
-              <p className="text-sm text-gray-500 mb-4">Steve Krug, 2000</p>
+              <h3 className="font-medium text-gray-900 mb-1">E-BOOK</h3>
+              {/* <p className="text-sm text-gray-500 mb-4">Steve Krug, 2000</p> */}
               
               <div className="space-y-2">
                 <div className="flex justify-between text-xs text-gray-500">
@@ -144,8 +144,8 @@ const MySelf = () => {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-medium text-gray-900 mb-1">Don't Make Me Think</h3>
-              <p className="text-sm text-gray-500 mb-4">Steve Krug, 2000</p>
+              <h3 className="font-medium text-gray-900 mb-1">ART NOTES</h3>
+              {/* <p className="text-sm text-gray-500 mb-4">Steve Krug, 2000</p> */}
               
               <div className="space-y-2">
                 <div className="flex justify-between text-xs text-gray-500">
