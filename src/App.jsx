@@ -17,10 +17,10 @@ function App() {
 
    
     
-      <header className=' grid grid-cols-2 justify-between'>
+      <header className=' grid grid-cols-9 '>
 
 
-      <Sidebar></Sidebar>
+      <Sidebar className="row-span-1"></Sidebar>
 
       <Navbar></Navbar>
 

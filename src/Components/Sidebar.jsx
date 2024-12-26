@@ -6,7 +6,7 @@ import { Outlet,Link,NavLink } from "react-router-dom";
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className=''>
 
 <h1 className="text-2xl font-bold">My <span className='text-red-600'>Book</span> <br /> <span className="text-4xl">Shelf</span></h1>
 
