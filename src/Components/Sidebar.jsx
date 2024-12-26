@@ -22,7 +22,7 @@ const Sidebar = () => {
         </li>
         <li>
           {/* <a href="/about">About Us</a> */}
-          <NavLink className="font-medium" to="about">About Us</NavLink>
+          <NavLink className="font-medium" to="search">Search</NavLink>
           </li>
           <li>
           {/* <a href="/contact">Contact Us</a> */}
