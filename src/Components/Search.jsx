@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
-import { FaCircleXmark } from "react-icons/fa6";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
-  
+
 
   const fetchBooks = async () => {
-    if (!searchTerm.trim()) {
-      alert("Please enter a search term");
-      return;
-    }
+    
     setLoading(true);
     try {
       const response = await fetch(
@@ -49,8 +44,6 @@ const Search = () => {
       setLoading(false);
     }
   };
-
-
 
   const handleSearch = (e) => {
     e.preventDefault();
