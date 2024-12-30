@@ -12,6 +12,7 @@ import Employees from './Components/Employees/Employees.jsx';
 import Employee from './Components/Employee/Employee.jsx';
 import Home from './Components/Home.jsx';
 import MySelf from './Components/MySelf.jsx';
+import Search from './Components/Search.jsx';
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
 
       {
         path: "/search",
-        element: <h1 className='text-center'>Search</h1>,
+        element: <Search></Search>,
       },
     
       {
