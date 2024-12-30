@@ -29,11 +29,7 @@ const Search = () => {
         description: book.first_sentence
           ? book.first_sentence[0]
           : "No description available.",
-        ratings: book.ratings_average ? book.ratings_average.toFixed(1) : "0.0",
         publishYear: book.first_publish_year || "N/A",
-        hardCopy: book.availability?.physical || false,
-        eBook: book.availability?.is_ebook || false,
-        status: book.availability?.status || "Unknown",
       }));
 
       setBooks(booksWithDetails);
@@ -74,9 +70,8 @@ const Search = () => {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4">
           <div className="lg:grid lg:grid-cols-[332px_repeat(6,_1fr)] lg:font-medium hidden">
-            
+
             <div>Title</div>
-            <div>Ratings</div>
             <div>Category</div>
 
           </div>
@@ -98,10 +93,7 @@ const Search = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-gray-600">
-                {book.ratings}
-                <span className="text-gray-400 text-[12px]">/5</span>
-              </p>
+             
               <p className="text-gray-600">{book.categories.split(",")[0]}</p>
              
               <button className="bg-orange-400">
