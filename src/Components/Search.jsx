@@ -74,11 +74,11 @@ const Search = () => {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4">
           <div className="lg:grid lg:grid-cols-[332px_repeat(6,_1fr)] lg:font-medium hidden">
+            
             <div>Title</div>
             <div>Ratings</div>
             <div>Category</div>
-            <div>Availability</div>
-            <div>Status</div>
+
           </div>
           {books.map((book) => (
             <div
