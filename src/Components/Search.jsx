@@ -6,10 +6,7 @@ const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [selectedBook, setSelectedBook] = useState(null);
-  const [favorites, setFavorites] = useState([]);
-
-
+  
 
   const fetchBooks = async () => {
     if (!searchTerm.trim()) {
@@ -113,41 +110,14 @@ const Search = () => {
                 <span className="text-gray-400 text-[12px]">/5</span>
               </p>
               <p className="text-gray-600">{book.categories.split(",")[0]}</p>
-              <p className="text-gray-600">
-                <p className="text-gray-600 mb-1 flex items-center gap-2">
-                  {book.hardCopy ? (
-                    <IoIosCheckmarkCircle className="text-green-500" />
-                  ) : (
-                    <FaCircleXmark />
-                  )}{" "}
-                  Hard Copy
-                </p>
-                <p className="text-gray-600 mb-1 flex items-center gap-2">
-                  {book.eBook ? <IoIosCheckmarkCircle /> : <FaCircleXmark />}{" "}
-                  E-Book
-                </p>
-              </p>
-              <p className="text-white bg-[#42BB4E] text-center rounded-md text-[14px] w-20">
-                {book.status === "in-shelf" ? "In Shelf" : "Borrowed"}
-              </p>
              
-              <button onClick={() => handleFavorite(book)} className="mt-2">
-                {favorites.some((fav) => fav.id === book.id) ? (
-                  <FaHeart className="text-red-500" />
-                ) : (
-                  <FaRegHeart className="text-gray-500" />
-                )}
-              </button>
-
-              <button>
+              <button className="bg-orange-400">
                 Preview
               </button>
             </div>
           ))}
         </div>
       )}
-
-     
     </div>
   );
 };
